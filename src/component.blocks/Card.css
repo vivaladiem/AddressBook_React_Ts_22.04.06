@@ -1,0 +1,17 @@
+.Card {
+    border: 1px solid black;
+
+    width: 300px;
+    
+    margin: 16px;
+    
+  
+}
+
+.Card__Header {
+    border: 1px solid grey;
+}
+
+.Card__Body {
+    align-content: center;
+}

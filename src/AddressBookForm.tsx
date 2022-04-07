@@ -1,10 +1,12 @@
 ﻿import AddressBook from './common/AddressBook';
 import React from 'react';
-import Dialog from './component.blocks/Dialog/Dialog';
-import InputForm from './component.blocks/InputForm/InputForm';
-import Button from './component.blocks/Button/Button';
-import SideBar from './component.blocks/SideBar/SideBar';
-
+import Dialog from './component.blocks/Dialog';
+import InputForm from './component.blocks/InputForm';
+import Button from './component.blocks/Button';
+import SideBar from './component.blocks/SideBar';
+import Card from './component.blocks/Card';
+import Card__Header_Db from './component.blocks/Card__Header_Db';
+import image from "./typo_img01.png";
 
 interface Props {
 
@@ -79,10 +81,23 @@ class AddressBookForm extends React.Component<Props, State> {
                     <Button className="SideBar__Button">고치다</Button>
                     <Button className="SideBar__Button">정리하다</Button>
                 </SideBar>
+                <Card
+                    header={<Card__Header_Db stage={1} folderName="폴더1" />}
+                    body={
+                        <div className="Card__Body">
+                            <img src={image} />
+                        </div>
+                    }
+                    footer={
+                        <div className="Card__Footer">
+                            <Button>원본 파일 다운로드</Button>
+                            <Button>변환 파일 다운로드</Button>
+                        </div>
+                    }
+                />
             </div>
         )
     }
-
 }
 
 export default AddressBookForm;

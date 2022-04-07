@@ -2,7 +2,7 @@ import * as React from 'react';
 import './InputForm.css';
 
 interface Props {
-    onInputChanged?: (value: string) => void;
+    onInputChanged?: (value: string) => void; // onInputChanged ?: 에서 ?는 없어도 됨을 뜻합니다. // 자료형이 함수임을 가리킵니다.
     label?: string;
     size?: string;
 }
