@@ -1,0 +1,26 @@
+.InputForm {
+    margin: 12px;
+}
+
+.InputForm__Label {
+    display: block;
+    float: left;
+    width: 8rem;
+    margin-right: 8px;
+}
+
+.InputForm__Input {
+
+}
+
+.InputForm__Input--size--s {
+    width: 12rem;
+}
+
+.InputForm__Input--size--m {
+    width: 16rem;
+}
+
+.InputForm__Input--size--l {
+    width: 20rem;
+}

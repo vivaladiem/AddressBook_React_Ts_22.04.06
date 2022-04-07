@@ -1,0 +1,7 @@
+.SideBar {
+    float: right;
+}
+
+.SideBar__Button {
+    display: block;
+}

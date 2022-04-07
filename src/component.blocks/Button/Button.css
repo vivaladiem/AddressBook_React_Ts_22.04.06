@@ -1,0 +1,13 @@
+.Button {
+    width: 8rem;
+    height: 2rem;
+    margin: 8px;
+}
+
+.Button--color--green {
+    background-color: green;
+}
+
+.Button--color--grey {
+    background-color: grey;
+}
