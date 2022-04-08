@@ -7,6 +7,7 @@ import SideBar from './component.blocks/SideBar';
 import Card from './component.blocks/Card';
 import Card__Header_Db from './component.blocks/Card__Header_Db';
 import image from "./typo_img01.png";
+import Card__Footer_db from './component.blocks/Card__Footer_db';
 
 interface Props {
 
@@ -67,7 +68,26 @@ class AddressBookForm extends React.Component<Props, State> {
     render() {
         return (
             <div className="AddressBookForm">
-                <div className="Article">
+                
+                <Card
+                    header={<Card__Header_Db stage={2} folderName="폴더1" />}
+                    body={
+                        <div className="Card__Body">
+                            <img src={image} />
+                        </div>
+                    }
+
+                    footer={<Card__Footer_db progress={4} registeredDate="2022-04-08" />} 
+                />
+            </div>
+        )
+    }
+}
+
+export default AddressBookForm;
+
+/*
+<div className="Article">
                     <Dialog className="Article__Dialog" legend="개인">
                         <InputForm label={`성     명`} size="s" onInputChanged={this.onNameChanged}/>
                         <InputForm label={`주     소`} size="l" onInputChanged={this.onAddressChanged}/>
@@ -81,23 +101,5 @@ class AddressBookForm extends React.Component<Props, State> {
                     <Button className="SideBar__Button">고치다</Button>
                     <Button className="SideBar__Button">정리하다</Button>
                 </SideBar>
-                <Card
-                    header={<Card__Header_Db stage={1} folderName="폴더1" />}
-                    body={
-                        <div className="Card__Body">
-                            <img src={image} />
-                        </div>
-                    }
-                    footer={
-                        <div className="Card__Footer">
-                            <Button>원본 파일 다운로드</Button>
-                            <Button>변환 파일 다운로드</Button>
-                        </div>
-                    }
-                />
-            </div>
-        )
-    }
-}
 
-export default AddressBookForm;
+*/

@@ -1,17 +1,67 @@
 .Card {
-    border: 1px solid black;
+    border: none;
 
-    width: 300px;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 7%);
+
+    width: 23rem;
     
     margin: 16px;
     
+    display: block;
+
+    padding: 16px;
   
 }
 
 .Card__Header {
-    border: 1px solid grey;
+}
+
+.Card__CheckBox {
+    background-color: #e5e5e5;
+    height: 16px;
+    width: 16px;
+    border: 0px;
+}
+
+.Card__CheckBox--checked {
+
+}
+
+.Card__MoreMenuIcon {
+    float: right;
 }
 
 .Card__Body {
+    padding: 8px;
     align-content: center;
+    text-align: center;
+}
+
+.Card__Footer {
+    padding: 8px;
+    text-align: center;
+}
+
+.Card__RegisteredDateBox {
+    float: left;
+}
+
+.Card__RegisteredDateLabel {
+    font-size: 0.8rem;
+}
+.Card__RegisteredDate {
+    margin-left: 8px;
+    font-size: 1rem;
+}
+
+.Card__ProgressMessageBox {
+    float: right;
+}
+.Card__ProgressMessageLabel {
+    font-size: 0.8rem;
+}
+
+.Card__ProgressMessage {
+    margin-left: 8px;
+    font-size: 1rem;
 }
