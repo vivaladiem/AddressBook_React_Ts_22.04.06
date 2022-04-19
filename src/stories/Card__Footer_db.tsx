@@ -29,10 +29,10 @@ class Card__Footer_db extends React.Component<Props, State> {
         // 버튼을 정의합니다. // 이렇게밖에 안되나...? 개선 고민해보자.
         let buttons;
         if (this.props.progress == 1) {
-            buttons = <Button color="grey">문제선택 및 결제</Button>
+            buttons = <Button size="l" color="grey">문제선택 및 결제</Button>
         }
         else if (this.props.progress == 2) {
-            buttons = <Button color="green">문제선택 및 결제</Button>
+            buttons = <Button size="l" color="green">문제선택 및 결제</Button>
         }
         else if (this.props.progress == 3) {
             buttons =
@@ -55,24 +55,20 @@ class Card__Footer_db extends React.Component<Props, State> {
                     <Button color="blue">변환 파일 다운로드</Button>
                 </div>
         }
-        else if (this.props.progress == 6) {
-            buttons = 
-                <div>
-                    <Button color="green" onClick={this.onDownloadButtonClicked}>원본 파일 다운로드</Button>
-                    <Button color="green" onClick={this.onTransformedFileDownloadButtonClicked }>변환 파일 다운로드</Button>
-                </div>
-        }
+
 
 
         return (
             <div className="Card__Footer">
-                <div className="Card__RegisteredDateBox">
-                    <span className="Card__RegisteredDateLabel">등록일</span>
-                    <span className="Card__RegisteredDate">{this.props.registeredDate}</span>
-                </div>
-                <div className="Card__ProgressMessageBox">
-                    <span className="Card__RegisteredDateLabel">진행상태</span>
-                    <span className="Card__ProgressMessage">{Card__Footer_db.progressMessage[this.props.progress]}</span>
+                <div className="Card__MetaInfo">
+                    <div className="Card__RegisteredDateBox">
+                        <span className="Card__RegisteredDateLabel">등록일</span>
+                        <span className="Card__RegisteredDate">{this.props.registeredDate}</span>
+                    </div>
+                    <div className="Card__ProgressMessageBox">
+                        <span className="Card__RegisteredDateLabel">진행상태</span>
+                        <span className="Card__ProgressMessage">{Card__Footer_db.progressMessage[this.props.progress]}</span>
+                    </div>
                 </div>
                 {helperButton}
                 {buttons}
@@ -82,7 +78,7 @@ class Card__Footer_db extends React.Component<Props, State> {
 }
 
 interface Props {
-    progress: 1 | 2 | 3 | 4 | 5 | 6;
+    progress: 1 | 2 | 3 | 4 | 5;
     registeredDate: string;
 }
 

@@ -1,14 +1,10 @@
 .Card {
     border: none;
-
     box-shadow: 0 0 8px 0 rgb(0 0 0 / 7%);
-
-    width: 23rem;
-    
+    height: 42rem;
+    width: 30rem;
     margin: 16px;
-    
     display: block;
-
     padding: 16px;
   
 }
@@ -40,6 +36,10 @@
 .Card__Footer {
     padding: 8px;
     text-align: center;
+}
+
+.Card__MetaInfo {
+    margin-bottom: 1.5rem;
 }
 
 .Card__RegisteredDateBox {

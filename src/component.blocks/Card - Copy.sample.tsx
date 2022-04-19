@@ -1,6 +1,5 @@
 import * as React from 'react';
 import './Card.css';
-import Card__Header from './Card__Header_Question';
 
 
 /**

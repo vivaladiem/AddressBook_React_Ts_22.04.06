@@ -1,13 +1,9 @@
 ﻿import AddressBook from './common/AddressBook';
 import React from 'react';
-import Dialog from './component.blocks/Dialog';
-import InputForm from './component.blocks/InputForm';
-import Button from './component.blocks/Button';
-import SideBar from './component.blocks/SideBar';
-import Card from './component.blocks/Card';
-import Card__Header_Db from './component.blocks/Card__Header_Db';
-import image from "./typo_img01.png";
-import Card__Footer_db from './component.blocks/Card__Footer_db';
+import Card from './stories/Card';
+import Card__Header_Db from './stories/Card__Header_db';
+import Card__Footer_db from './stories/Card__Footer_db';
+import Toggle from './stories/Toggle';
 
 interface Props {
 
@@ -68,17 +64,6 @@ class AddressBookForm extends React.Component<Props, State> {
     render() {
         return (
             <div className="AddressBookForm">
-                
-                <Card
-                    header={<Card__Header_Db stage={2} folderName="폴더1" />}
-                    body={
-                        <div className="Card__Body">
-                            <img src={image} />
-                        </div>
-                    }
-
-                    footer={<Card__Footer_db progress={4} registeredDate="2022-04-08" />} 
-                />
             </div>
         )
     }
